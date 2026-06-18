@@ -1,0 +1,24 @@
+{
+  "name": "ai-interview-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered Interview Platform for mock interviews, preparation, and career coaching",
+  "scripts": {
+    "dev": "node init && turbo run dev",
+    "build": "node init && turbo run build",
+    "preview": "turbo run preview",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "dev:web": "pnpm --filter @interview/web dev",
+    "dev:api": "pnpm --filter @interview/api dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@11.7.0"
+}
